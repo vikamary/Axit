@@ -389,6 +389,7 @@ ul{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
 .benefits__item{
@@ -1013,6 +1014,10 @@ textarea:focus{
   }
   .features__image{
     display: none;
+  }
+
+  .benefits__items{
+    
   }
 
   .footer__media{
