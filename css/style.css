@@ -219,7 +219,8 @@ ul{
 .social .container{
   padding-bottom: 18px;
   display: flex;
-  justify-content: space-betweens;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
@@ -388,7 +389,8 @@ ul{
 
 .benefits__items{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
@@ -443,7 +445,9 @@ ul{
 
 .pricing__wrapper{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -545,7 +549,9 @@ ul{
 
 .reviews__customs{
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .custom__cards{
@@ -806,105 +812,92 @@ textarea:focus{
   margin-bottom: 28px;
 }
 
-
-@media (max-width: 1024px){
-  .header__nav{
-    margin-right: 20px;
-  }
-  .header__logo{
-    margin-left: 115px;
-  }
-  .content{
-    margin-left: 115px;
-  }
-
-  .banner__logo{
-    max-width: 115px;
-    max-height: 41px;
-    margin-top: 17px;
-    margin-bottom: 57px;
-  }
-  .banner__title{
-    font-size: 36px;
-    max-width: 455px;
-    margin-bottom: 42px;
-  }
-
-  .banner__line{
-    width: 115px;
-    margin-bottom: 31px;
-  }
-
-  .banner__description{
-    font-size: 14px;
-    max-width: 183px;
-    margin-bottom: 31px;
-  }
-
-  .form{
-    max-width: 398px;
-    min-height: 450px;
-  }
-  .form__title{
-    font-size: 18px;
-  }
-  .form__input{
-    max-width: 298px;
-  }
-  .form__button{
-    bottom: 10px;
-    max-width: 398px;
-  }
-  .download-link{
-    max-width: 183px;
-    max-height: 50px;
-    font-size: 18px;
-  }
-  
+.burger{
+  display: none;
 }
 
-@media (max-width: 768px){
-  .header__logo{
-    width: 65px;
-    height: 23px;
-    margin: 0;
+@media (max-width: 1170px){
+  .header__logo {
+    padding: 0 115px;
   }
-  .content{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .header__nav {
+    padding-right: 30px;
   }
-  .banner{
-    padding-top: 85px;
+  .header__list {
   }
-  .banner__logo{
+  .header__link {
+  }
+  .banner {
+    padding-top: 136px; 
+    padding-bottom: 131px;
+    padding-left: 115px;
+    padding-right: 20px;
+  }
+  .container {
+
+  }
+  .content {
+
+  }
+  .banner__inner-wrapper {
+
+  }
+  .banner__logo {
+    width: 116px;
+    height: 41px;
+  }
+  .banner__title {
+    max-width: 454px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .banner__description {
+    max-width: 183px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .download-link {
+    padding: 12px 47px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .form {
+    max-width: 398px;
+  }
+  .form__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .form__banner {
+
+  }
+  .form__group {
+
+  }
+  .form__items {
+
+  }
+  .form__input {
+    font-size: 14px;
+    line-height: 19px;
+    width: 298px;
+  }
+  .form__items-pass {
+
+  }
+  .form__but {
+
+  }
+  .form__button {
+
+  }
+}
+
+@media (max-width:970px){
+  nav{
     display: none;
   }
-  .header__nav{
-    display: none;
-  }
-  .banner__inner-wrapper{
-    max-width: 288px;
-  }
-  .banner__title{
-    text-align: center;
-  }
-  .banner__line{
-    width: 134px;
-    margin: 0 auto;
-    margin-bottom: 42px;
-    margin-top: 42px;
-  }
-  .banner__description{
-    margin: 0 auto;
-    max-width: 288px;
-    text-align: center;
-    margin-bottom: 42px;
-  }
-  .download-link{
-    max-width: 288px;
-    margin: 0 auto;
-    margin-bottom: 56px;
+  .burger{
+    display: block;
   }
 }
