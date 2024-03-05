@@ -69,7 +69,8 @@ ul{
 
 .content{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form{
@@ -220,12 +221,8 @@ ul{
   padding-bottom: 18px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.social__icons{
-  margin-left: 50px;
 }
 
 .social__title{
@@ -247,7 +244,7 @@ ul{
 .social__list{
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 30px;
 }
 
 .social__media{
@@ -818,14 +815,10 @@ textarea:focus{
 
 @media (max-width: 1170px){
   .header__logo {
-    padding: 0 115px;
+    padding: 0 170px;
   }
   .header__nav {
     padding-right: 30px;
-  }
-  .header__list {
-  }
-  .header__link {
   }
   .banner {
     padding-top: 136px; 
@@ -833,18 +826,10 @@ textarea:focus{
     padding-left: 115px;
     padding-right: 20px;
   }
-  .container {
-
-  }
-  .content {
-
-  }
-  .banner__inner-wrapper {
-
-  }
   .banner__logo {
     width: 116px;
     height: 41px;
+    
   }
   .banner__title {
     max-width: 454px;
@@ -868,30 +853,41 @@ textarea:focus{
     font-size: 18px;
     line-height: 25px;
   }
-  .form__banner {
 
-  }
-  .form__group {
-
-  }
-  .form__items {
-
-  }
   .form__input {
     font-size: 14px;
     line-height: 19px;
     width: 298px;
   }
-  .form__items-pass {
+}
 
+@media (max-width:1080px){
+  
+  .social__title{
+    font-size: 18px;
+    line-height: 25px;
   }
-  .form__but {
-
+  .social__description{
+    max-width: 402px;
+    font-size: 14px;
+    line-height: 16px;
   }
-  .form__button {
+  .social__media{
+    width: 44px;
+    height: 44px;
+  }
+  .social__list{
+    gap: 20px;
+  }
+.header__logo{
+  padding-left: 60px;
+}
 
+  .banner{
+    padding-left: 60px;
   }
 }
+
 
 @media (max-width:970px){
   nav{
@@ -899,5 +895,128 @@ textarea:focus{
   }
   .burger{
     display: block;
+    padding-right: 20px;
+  }
+  .header__logo{
+    padding-left: 20px;
+  }
+  .banner{
+    padding-left: 20px;
+  }
+  .banner__title{
+    max-width: 350px;
+  } 
+}
+
+@media (max-width:867px){
+  .header__logo{
+    height: 23px;
+  }
+  .burger__logo{
+    width: 30px;
+    height: 30px;
+  }
+  .banner{
+    padding-top: 85px;
+    padding-bottom: 50px;
+  }
+  
+  .banner__logo{
+    display: none;
+  }
+  .banner__inner-wrapper{
+    text-align: center;
+  
+  }
+  .banner__title{
+    max-width: 400px;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;    
+  }
+
+  .banner__line{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner__description{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 288px; 
+  }
+  .content{
+    gap: 55px;
+  }
+
+  .download-link{
+    padding: 12px 98px;
+  }
+
+  .form{
+    max-width: 288px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .form__group{
+    padding: 0 30px;
+    padding-bottom: 50px;
+  }
+  .form__title{
+    font-size: 14px;
+    line-height: 19px; 
+    margin-bottom: 36px;   
+  }
+  .form__input{
+    width: 240px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .form__button{
+    bottom: 0px;
+  }
+  .social .container{
+    justify-content: center;
+    max-width: 287px;
+  }
+  
+  .social__title{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;    
+  }
+  .social__description{
+    width: 271px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center; 
+    margin-bottom: 35px; 
+  }
+  .social__list{
+    flex-wrap: wrap;
+    gap: 19px;
+  }
+  .social__media{
+    width: 20px;
+    height: 20px;
+  }
+  .features__tab active{
+  width: 102px;
+  }
+
+  .features__tab{
+    width: 50px;
+
+  }
+  .features__wrapper{
+    display: block;
+  }
+  .features__image{
+    display: none;
+  }
+
+  .footer__media{
+    width: 26px;
+    height: 26px;
   }
 }
