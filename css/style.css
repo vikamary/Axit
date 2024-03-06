@@ -268,8 +268,7 @@ ul{
 }
 
 .features__tab.active{
-  width: 203px;
-  height: 40px;
+  max-width: 203px;
   text-align: center;
   color: #333333;
   font-size: 14px;
@@ -327,7 +326,6 @@ ul{
 }
 
 .features__btn{
-  width: 270px;
   padding: 18px 25px;
   background-color: #EC7979;
   color: #fff;
@@ -1002,18 +1000,56 @@ textarea:focus{
     height: 20px;
   }
   .features__tab active{
-  width: 102px;
+  width: 96px;
+  font-size: 14px;
+  line-height: 19px;
   }
 
   .features__tab{
-    width: 50px;
+    width: 96px;
 
   }
+
+  .features__info{
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  .features__title{
+    padding: 0 35px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .features__description{
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    
+  }
+  .features__desc{
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .features__btn{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding: 15px 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .features__wrapper{
-    display: block;
+    width: 100%;
+    text-align: center;
   }
   .features__image{
     display: none;
+    
   }
 
   .benefits__items{
