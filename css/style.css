@@ -1159,21 +1159,35 @@ textarea:focus{
     line-height: 16px;    
   }
 
+  .form__cont-button{
+    padding: 15px 80px;
+  }
+
   .styled-line{
     width: 134px;
   }
 
   .banner__stylish .download__link{
-    padding: 25px 100px;
+    padding: 15px 80px;
     width: 100%;
   }
 
-  footer__all-rights{
-    color: rgba(255, 255, 255, 0.5);
+  .banner__stylish{
+    padding: 50px 15px;
+  }
+
+  .footer__all-rights{
+    color: #FFFFFF80;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .footer__media{
     width: 26px;
     height: 26px;
+  }
+
+  .footer__list{
+    gap: 15px;
   }
 }
